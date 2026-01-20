@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | Chad X Luxuries</title>
+    <link rel="stylesheet" href="booking.css">
+  </head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <h2 class="logo">Chad <span>X</span> Luxuries</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h1>Book Your Room</h1>
+
+        <form id="bookingForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <label for="room">Select Room:</label>
+            <select id="room" required>
+                <option value="">--Choose a Room--</option>
+                <option value="Standard Room">Standard Room - ₦25,000/night</option>
+                <option value="Deluxe Room">Deluxe Room - ₦45,000/night</option>
+                <option value="Executive Suite">Executive Suite - ₦80,000/night</option>
+            </select>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" required>
+
+            <button type="submit">Confirm Booking</button>
+
+            <div class="success" id="successMsg">
+                Thank you! Your booking has been received.
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Valentine Hotel. All rights reserved.</p>
+</footer>
+
+<script src="booking.js"></script>
+  </body>
+</html>
