@@ -16,6 +16,15 @@
             position: relative; /* added so .logo can be positioned at the header edge */
         }
 
+          .container1 nav{
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+             width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
         .container {
             width: 90%;
             max-width: 700px;
