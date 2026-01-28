@@ -61,10 +61,10 @@
           /* Header ends here */
 
         /* Hero */
-        .hero{
+        /*.hero{
              background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/hotelback1.jpg);
              height: 580px;
-        }
+        }*/
 
         .hero-content{
             text-align: center;
