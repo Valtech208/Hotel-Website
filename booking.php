@@ -13,10 +13,10 @@
         <nav>
             <h2 class="logo">Chad <span>X</span> Luxuries</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="rooms.php">Rooms</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="booking.php">Book Now</a></li>
             </ul>
         </nav>
     </div>

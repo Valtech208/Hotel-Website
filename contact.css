@@ -59,16 +59,16 @@
             font-weight: 900;
           }
           /* Header ends here */
+          /* hero-section starts here */
 
-        /* Hero */
-        /*.hero{
+
+             .hero{
              background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/hotelback1.jpg);
-             height: 580px;
-        }*/
+             height: 500px;
+        }
 
         .hero-content{
             text-align: center;
-            margin-top: 89px;
             color: white;
         }
 
@@ -78,7 +78,7 @@
 
         .hero-content p {
             margin: 20px 0;
-            font-size: 1.2rem;
+            font-size: 2.1rem;
         }
 
         .btn {
@@ -98,62 +98,121 @@
             box-shadow: rgba(243, 239, 239, 0.3) 5px 5px 10px;
         }
 
-        .container-contact {
-            width: 90%;
-            max-width: 700px;
-            margin: auto;
-        }
-        
-        section {
-            padding: 60px 0;
-        }
+        /* contact-section starts here */
+        .contact-section {
+          background: linear-gradient(to top, #1a1a1a, #222);
+  color: #f5f5f5;
+          padding: 80px 60px;
+  font-family: 'Playfair Display', serif;
+  
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+.contact-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
 
-        input, textarea {
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-        }
+.contact-info h2 {
+  color: #c89724;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
 
-        textarea {
-            resize: none;
-            height: 120px;
-        }
+.contact-info p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
 
-        button {
-            padding: 12px;
-            background: #1e3a5f;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 4px;
-        }
+.contact-details div {
+  margin-bottom: 15px;
+}
 
-        button:hover {
-            background: #162c47;
-        }
+.contact-details h4 {
+  color: #c89724;
+  margin-bottom: 5px;
+}
 
-        .info {
-            text-align: center;
-            margin-top: 30px;
-        }
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: #2a2a2a;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
 
-        footer {
-            background: #1e3a5f;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
+.contact-form h2 {
+  color: #c89724;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #1a1a1a;
+  color: #f5f5f5;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  background-color: #c89724;
+  color: #1a1a1a;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e0af3d;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 22px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s;
+}
+
+.social-icons a:hover img {
+  filter: invert(44%) sepia(63%) saturate(588%) hue-rotate(10deg) brightness(97%) contrast(90%);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    margin-top: 40px;
+  }
+}
